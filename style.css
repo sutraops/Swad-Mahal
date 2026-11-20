@@ -1,1 +1,252 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
+body {
+    background-color: #fdfbf7; /* Light cream background */
+    color: #333;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #4a0e0e; /* Deep maroon */
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 60px; /* Adjust based on your logo */
+}
+
+nav a {
+    color: #e6c17a; /* Gold text */
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+.btn-reserve {
+    background-color: #e6c17a;
+    color: #4a0e0e !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero-bg.jpg'); /* Use your hero image */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: #e6c17a;
+}
+
+.hero h1 span {
+    color: #fff;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.btn-primary {
+    background-color: #e6c17a;
+    color: #4a0e0e;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Section Styling */
+section {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #4a0e0e;
+    margin-bottom: 40px;
+}
+
+/* Specialities Grid */
+.speciality-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.speciality-item {
+    text-align: center;
+}
+
+.speciality-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #e6c17a;
+}
+
+.speciality-item p {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #4a0e0e;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: #4a0e0e;
+    color: #fdfbf7;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.about-text {
+    text-align: left;
+}
+
+.about-text h2 {
+    color: #e6c17a;
+    margin-bottom: 20px;
+}
+
+.btn-secondary {
+    background-color: #e6c17a;
+    color: #4a0e0e;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Featured Dishes */
+.dish-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.dish-item img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.dish-item p {
+    margin-top: 15px;
+    font-weight: 600;
+    color: #4a0e0e;
+}
+
+/* Reservation Banner */
+.reservation-banner {
+    background-color: #4a0e0e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 5%;
+}
+
+.reservation-banner h2 {
+    color: #e6c17a;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #2b0606;
+    color: #ccc;
+    padding: 40px 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer h3 {
+    color: #e6c17a;
+    margin-bottom: 15px;
+}
+
+footer a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+.footer-logo img {
+    height: 80px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav a {
+        margin: 0 10px;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .about {
+        flex-direction: column;
+    }
+    .reservation-banner {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
